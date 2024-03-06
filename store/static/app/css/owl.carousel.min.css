@@ -1,0 +1,23 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+ .owl-nav .owl-next, .owl-nav .owl-prev {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.owl-nav .owl-next {
+    right: 0;
+    display: flex;
+    margin-right: 2%;
+    font-size: 25px !important;
+}
+.owl-nav .owl-prev{
+    left: 0;
+    display: flex;
+    margin-left: 2%;
+    font-size: 25px !important;
+}
