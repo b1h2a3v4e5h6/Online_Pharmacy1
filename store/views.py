@@ -442,3 +442,9 @@ def newsletter(request):
             contact.save()
             messages.success(request, "email updated")
     return render(request, 'app/newsletter.html')
+
+
+  #  @login_required
+   # def user_logout(request):
+    #    logout(request)
+     #   return redirect('admin:login')
