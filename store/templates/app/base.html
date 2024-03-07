@@ -72,6 +72,7 @@
          </div>
 
 <!-- Prescription Uploa -->
+{% if request.user.is_authenticated %}
 
     <div class="upload-pres pull-right" style="display:flex;">
       <button class="custom-button upload-btn" id="upload-btn" onclick="document.getElementById('formFile').click()"
@@ -83,6 +84,7 @@
             <button type="submit" class="custom-button upload-btn">Submit</button>
         </form>
     </div>
+    {% endif %}
 
          <div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
