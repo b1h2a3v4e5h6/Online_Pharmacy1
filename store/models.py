@@ -12,9 +12,9 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class Customer(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
-    mobile = models.IntegerField(default=0)
+    mobile =models.CharField(max_length=10)
     city = models.CharField(max_length=50)
-    pincode = models.IntegerField()
+    pincode = models.CharField(max_length=6)
     area = models.CharField(max_length=50)
 
     def __str__(self):

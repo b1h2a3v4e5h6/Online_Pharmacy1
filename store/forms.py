@@ -58,10 +58,11 @@ class CustomerProfileForm(forms.ModelForm):
         fields = ['name', 'mobile', 'city', 'area', 'pincode' , ]
         widgets = {
         'name':forms.TextInput(attrs={'class':'form-control'}),
-        'mobile':forms.NumberInput(attrs={'class':'form-control'}),  
+        'mobile':forms.TextInput(attrs={'class':'form-control'}),  
         'area':forms.TextInput(attrs={'class':'form-control'}),
         'city':forms.TextInput(attrs={'class':'form-control'}), 
-        'pincode':forms.NumberInput(attrs={'class':'form-control'})
+       'pincode':forms.TextInput(attrs={'class':'form-control'})
+
         }
 
 
