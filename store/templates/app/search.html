@@ -20,9 +20,9 @@
       {% for result in results %}
       <div class="row">
         <div class="col-md-3">
-          <a href="{% url 'product-detail' result.id %}"
-            ><img src="{{result.product_image.url}}" class="img-fluid" alt=""
-          /></a>
+          <a href="{% url 'product-detail' result.id %}">
+            <img src="{{result.product_image.url}}" class="img-fluid" alt=""/>
+          </a>
         </div>
         <div class="col-md-9">
           <h4>{{result.title}}</h4>
