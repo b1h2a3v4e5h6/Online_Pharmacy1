@@ -50,7 +50,6 @@ urlpatterns = [
     path('search/', views.SearchView.as_view(), name='search'),
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
-    path('verify_payment/', views.verify_payment, name='verify_payment'),
     path('buynow/', views.buynow, name='buynow'),
     path('prescription/', views.prescription, name="prescription"),
     path('newsletter/', views.newsletter, name="newsletter"),
